@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwindcss project</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body class="font-sahel">
+    <!-- --header -->
+
+    <header class="w-full fixed top-0 right-0 left-0 bg-white/90 backdrop-blur-sm border-b-gray-100 shadow-sm z-50 ">
+        <div class=" container mx-auto h-16 md:h-20 px-4 md:px-8 flex justify-between items-center ">
+            <div class="flex m-5">
+                <div
+                    class="size-6 bg-primary-600 opacity-75 rounded-full hover:opacity-100 transition-opacity cursor-pointer">
+                </div>
+                <div
+                    class="size-6 bg-secondary-600 opacity-100 -mr-2 rounded-full hover:opacity-75  transition-opacity cursor-pointer">
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="nav-item " href="#">صفحه اصلی</a>
+                <a class="nav-item" href="#">درباره ما</a>
+                <a class="nav-item " href="#"> خدمات</a>
+                <a class="nav-item " href="#">ویژگی ها</a>
+                <a class="nav-item " href="#"> قوانین</a>
+            </div>
+            <div class="hidden md:flex">
+                <button class="btn-primary">ورود
+                    یا عضویت</button>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <!-- <div class=" md:hidden bg-white border-gray-100 py-4">
+            <div class="px-3 space-y-3">
+                <a class="block py-2 text-gray-600 hover:text-gray-900" href="#"> صفحه اصلی</a>
+                <a class="block py-2 text-gray-600 hover:text-gray-900" href="#"> درباره ما</a>
+                <a class="block py-2 text-gray-600 hover:text-gray-900" href="#">خدمات</a>
+                <a class="block py-2 text-gray-600 hover:text-gray-900" href="#">ویژگی ها</a>
+                <a class="block py-2 text-gray-600 hover:text-gray-900" href="#"> قوانین</a>
+
+                <button class="btn-primary w-full">ورود
+                    یا عضویت</button>
+
+            </div>
+
+        </div> -->
+    </header>
+    <!-- End header -->
+
+    <!-- Hero -->
+
+    <section class=" relative container mx-auto flex flex-col justify-between md:flex-row items-center pt-30">
+        <!-- shadow -->
+         <div class="absolute -top-28 right-0 w-[200px] h-[200px] md:w-[500px] md:h-[500px] bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 rounded-full blur-[80px] -z-10"></div>
+
+
+
+        <!-- col-right -->
+        <div class="w-full md:w-1/2 space-y-8">
+            <div class="bg-gray-50 w-fit  hover:bg-gray-100 cursor-pointer rounded-full px-4 py-2">
+                <span>لورم ایپسوم متن ساختگی</span>
+            </div>
+            <h1 class="text-lg md:text-2xl font-bold leading-13">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                چاپ
+                <span class="text-primary-600 block">با استفاده از طراحان گرافیک است</span>
+                لورم ایپسوم متن ساختگی با تولید سادگی
+            </h1>
+            <p class="text-gray-600 max-w-xl ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                متون بلکه روزنامه و مجله در ستون</p>
+                <div>
+                    <input class="px-6 py-2 border border-gray-200 rounded-xl focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 transition-all text-gray-600 "  type="email" placeholder="آدرس ایمیل">
+                    <button class="btn-primary"></button>
+                </div>
+
+        </div>
+
+        <!-- col-left -->
+        <div class="w-1/2 flex justify-center hover:scale-[1.02] transition-all mt-16 md:mt-0 "> <img class="w-[400px] rounded-lg " src="./src/images/hero-image.jpg"
+                alt=""> </div>
+    </section>
+
+    <!-- End Hero -->
+
+</body>
+
+</html>
