@@ -32,6 +32,16 @@
     --color-secondary-800: oklch(0.444 0.177 26.899);
     --color-secondary-900: oklch(0.396 0.141 25.723);
     --color-secondary-950: oklch(0.258 0.092 26.042);
+
+     --animate-loop: loop 15s linear infinite;
+    @keyframes loop {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(+50%);
+        }
+    }
     
 }
 
@@ -44,5 +54,11 @@
 @layer components {
     .btn-primary {
         @apply  text-white text-sm bg-primary-600 px-6 py-2.5 rounded-lg cursor-pointer hover:bg-primary-700 transition-all
+    }
+}
+
+@layer components{
+    .company-item {
+        @apply mx-12 w-36 h-8 object-contain grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all
     }
 }
