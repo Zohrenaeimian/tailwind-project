@@ -62,3 +62,10 @@
         @apply mx-12 w-36 h-8 object-contain grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all
     }
 }
+
+@layer components{
+    .footer-li {
+        @apply text-gray-600 cursor-pointer hover:text-gray-800 transition-all   ;  
+
+    }
+}
